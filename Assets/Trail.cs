@@ -30,6 +30,7 @@ public class Trail : MonoBehaviour
                 {
                     Swipe = Instantiate(trailPrefab, mRay.GetPoint(rayDistance), Quaternion.identity); // if it doesn't exist, it instantiates a prefab
                 }
+
                 else
                 {
                     Swipe.transform.position = mRay.GetPoint(rayDistance); //Update the position of the line to that position.
@@ -60,7 +61,7 @@ public class Trail : MonoBehaviour
 
         var data = texture2D.EncodeToPNG(); //Output to png file format.
 
-        File.WriteAllBytes(Application.dataPath + "/savedImage.png", data); // Save the image file to the path.
+        File.WriteAllBytes(Application.dataPath + "/savedImage.png", data); // Save the image file to the path. Date and time added.
     }
 
     // Button UI:
@@ -94,10 +95,7 @@ public class Trail : MonoBehaviour
         trailPrefab.startColor = Color.black;
         trailPrefab.endColor = Color.black;
     }
-    public void clearTrail() // Delete the trail.
-    {
-        trailPrefab.Clear();
-    }
+
     public void thinSize() // Make width thin.
     {
         trailPrefab.startWidth = 0.1f;
