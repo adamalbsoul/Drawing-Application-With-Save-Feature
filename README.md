@@ -11,5 +11,4 @@
 
 🖼Save to PNG image
 
-Screenshot:
 ![screenshot](/unityPaint.png)
