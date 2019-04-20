@@ -8,7 +8,5 @@
 
 🖼Save to PNG image
 
-❌Clear the canvas
-
 Screenshot:
 ![screenshot](/unityPaint.png)
